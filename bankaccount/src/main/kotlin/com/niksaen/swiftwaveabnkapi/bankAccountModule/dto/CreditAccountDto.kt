@@ -12,7 +12,6 @@ data class CreditAccountDto(
     val accruedInterest:Int,
     val paymentsDay:Int,
     val currency:String,
-    val status:Boolean,
     val openDate: Date,
     val closeDate: Date?,
     val interestFreePeriod:Int

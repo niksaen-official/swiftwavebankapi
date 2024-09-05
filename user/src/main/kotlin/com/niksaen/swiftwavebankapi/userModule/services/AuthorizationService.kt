@@ -1,12 +1,12 @@
 package com.niksaen.swiftwavebankapi.userModule.services
 
-import com.niksaen.swiftwavebankapi.userModule.dto.AuthUserDTO
-import com.niksaen.swiftwavebankapi.userModule.dto.mappers.AuthUserMapper
-import com.niksaen.swiftwavebankapi.userModule.database
-import com.niksaen.swiftwavebankapi.core.AuthorizationResponse
-import com.niksaen.swiftwavebankapi.userModule.models.LoginData
 import com.niksaen.swiftwavebankapi.core.ServerResponse
 import com.niksaen.swiftwavebankapi.core.ServerResponseExt
+import com.niksaen.swiftwavebankapi.userModule.database
+import com.niksaen.swiftwavebankapi.userModule.dto.AuthUserDTO
+import com.niksaen.swiftwavebankapi.userModule.dto.mappers.AuthUserMapper
+import com.niksaen.swiftwavebankapi.userModule.models.AuthorizationResponse
+import com.niksaen.swiftwavebankapi.userModule.models.LoginData
 import org.springframework.dao.DataAccessException
 
 class AuthorizationService {

@@ -10,9 +10,3 @@ class ServerResponseExt<BodyType>(
     message: String,
     val body:BodyType
 ): ServerResponse(isSuccess,message)
-
-class AuthorizationResponse(
-    isSuccess: Boolean,
-    message: String,
-    val id:Long
-): ServerResponse(isSuccess, message)

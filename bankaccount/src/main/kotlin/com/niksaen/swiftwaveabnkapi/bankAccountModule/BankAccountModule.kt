@@ -2,6 +2,7 @@ package com.niksaen.swiftwaveabnkapi.bankAccountModule
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import com.niksaen.swiftwaveabnkapi.bankAccountModule.services.PaymentAccountService
 import com.niksaen.swiftwavebankapi.configurators.DatabaseConfigurator
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
@@ -12,6 +13,7 @@ import org.springframework.jdbc.core.JdbcTemplate
 class BankAccountModule
 
 val database = JdbcTemplate(DatabaseConfigurator().getDatabaseConfig())
+val paymentAccountService = PaymentAccountService()
 val gson: Gson = GsonBuilder().setDateFormat("yyyy-MM-dd").create()
 
 fun main() {

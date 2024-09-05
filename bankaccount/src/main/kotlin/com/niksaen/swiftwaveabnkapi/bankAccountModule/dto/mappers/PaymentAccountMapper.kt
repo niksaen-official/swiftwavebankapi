@@ -13,8 +13,7 @@ class PaymentAccountMapper : RowMapper<PaymentAccountDto> {
             rs.getInt("balance"),
             rs.getString("currency"),
             rs.getDate("open_date"),
-            rs.getDate("close_date"),
-            rs.getBoolean("status")
+            rs.getDate("close_date")
         )
     }
 }

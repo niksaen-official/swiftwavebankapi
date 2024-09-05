@@ -15,8 +15,7 @@ class SavingsAccountMapper : RowMapper<SavingsAccountDto> {
             rs.getString("currency"),
             rs.getInt("interest_rate"),
             rs.getDate("open_date"),
-            rs.getDate("close_date"),
-            rs.getBoolean("status")
+            rs.getDate("close_date")
         )
     }
 

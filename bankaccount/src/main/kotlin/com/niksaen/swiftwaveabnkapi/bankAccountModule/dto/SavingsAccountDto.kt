@@ -10,6 +10,5 @@ data class SavingsAccountDto(
     val currency:String,
     val interestRate:Int,
     val openDate:Date,
-    val closeDate:Date,
-    val status:Boolean
+    val closeDate:Date?,
 )
